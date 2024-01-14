@@ -1,0 +1,14 @@
+C:\Users\LENOVO\Desktop\fareportal\bankproject\obj\Debug\net8.0\bankproject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Desktop\fareportal\bankproject\obj\Debug\net8.0\bankproject.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Desktop\fareportal\bankproject\obj\Debug\net8.0\bankproject.AssemblyInfo.cs
+C:\Users\LENOVO\Desktop\fareportal\bankproject\obj\Debug\net8.0\bankproject.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\fareportal\bankproject\bin\Debug\net8.0\bankproject.exe
+C:\Users\LENOVO\Desktop\fareportal\bankproject\bin\Debug\net8.0\bankproject.deps.json
+C:\Users\LENOVO\Desktop\fareportal\bankproject\bin\Debug\net8.0\bankproject.runtimeconfig.json
+C:\Users\LENOVO\Desktop\fareportal\bankproject\bin\Debug\net8.0\bankproject.dll
+C:\Users\LENOVO\Desktop\fareportal\bankproject\bin\Debug\net8.0\bankproject.pdb
+C:\Users\LENOVO\Desktop\fareportal\bankproject\obj\Debug\net8.0\bankproject.dll
+C:\Users\LENOVO\Desktop\fareportal\bankproject\obj\Debug\net8.0\refint\bankproject.dll
+C:\Users\LENOVO\Desktop\fareportal\bankproject\obj\Debug\net8.0\bankproject.pdb
+C:\Users\LENOVO\Desktop\fareportal\bankproject\obj\Debug\net8.0\bankproject.genruntimeconfig.cache
+C:\Users\LENOVO\Desktop\fareportal\bankproject\obj\Debug\net8.0\ref\bankproject.dll
