@@ -1,0 +1,72 @@
+@model IEnumerable<flightproj.Models.PragatiBooking>
+
+@{
+    ViewData["Title"] = "YourBookings";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<h1>Your Bookings</h1>
+
+@* <p>
+    <a asp-action="Create">Create New</a>
+</p> *@
+<table class="table">
+    <thead>
+        <tr>
+            @* <th>
+                @Html.DisplayNameFor(model => model.Bookingid)
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.Passenger.Name);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Flightid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Passengerid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bookingdate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Passenger.ContactNo);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalCost);
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            @* <td>
+                @Html.DisplayFor(modelItem => item.Bookingid)
+            </td> *@
+            <td>
+                @Html.DisplayFor(modelItem => item.Passenger.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Flightid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Passengerid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bookingdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Passenger.ContactNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalCost)
+            </td>
+            <td>
+                @* @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) | *@
+                @Html.ActionLink("Cancel Booking", "CancelBooking", new {  id=item.Bookingid  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

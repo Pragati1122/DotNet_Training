@@ -1,0 +1,13 @@
+@{
+    @* ViewData["Title"] = "Home Page"; *@
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Booking Cancellation</h1>
+    <p><a asp-action = "GetFlightRequirements">Are you sure you want to cancel this booking?</a></p>
+    <form asp-action="CancelBooking">
+        <input type="submit" value="Cancel" class="btn btn-danger" /> 
+        
+    </form>
+</div>

@@ -1,0 +1,57 @@
+@model IEnumerable<flightproj.Models.PragatiBooking>
+
+@{
+    ViewData["Title"] = "ThisFlightBookingDetails";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Bookings on flight @ViewBag.flightid</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Bookingid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Flightid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Passengerid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bookingdate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalCost)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bookingid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Flightid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Passengerid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bookingdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalCost)
+            </td>
+            <td>
+                @* @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ }) *@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
