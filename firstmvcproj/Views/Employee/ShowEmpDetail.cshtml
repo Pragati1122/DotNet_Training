@@ -1,0 +1,20 @@
+@* model - to bind the view to the model class
+Model - dynamic property which holds the properties of the model class*@
+
+@* @model firstmvcproj.Models.Employee *@
+@model IEnumerable<firstmvcproj.Models.Employee>             // IEnumerable bcoz now we are accepting a list from the action method
+
+<table class = "table">
+    <tr>
+        <th>Eid</th>
+        <th>Ename</th>
+        <th>Salary</th>
+    </tr>
+    @foreach(var item in Model){                             // @ is used to convert c# code into .... so that it can be used here
+        <tr>
+            <td> @item.Eid </td>
+            <td> @item.Ename </td>
+            <td> @item.Salary</td>
+        </tr>
+    }
+</table>

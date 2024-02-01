@@ -1,0 +1,55 @@
+@model IEnumerable<firstmvcproj.Models.PragatiEmp>
+
+@{
+    ViewData["Title"] = "GetAllEmployeesFromDB";
+}
+
+<h1>GetAllEmployeesFromDB</h1>
+<h1>Hello @ViewBag.Username</h1>             @* dynamically getting the value of username from controller*@
+
+
+<p>
+    <a asp-controller="Login" asp-action="Logout">Logout</a>        
+</p>
+<p>
+    <a asp-controller="Account" asp-action="ShowAllAccounts">All Accounts</a>        
+</p>
+<p>
+    <a asp-action="AddEmployee">Register</a>        
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Eid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ename)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salary)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Eid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ename)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Salary)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.Eid  }) |
+                @Html.ActionLink("Details", "Details", new {  id=item.Eid  }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.Eid  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
